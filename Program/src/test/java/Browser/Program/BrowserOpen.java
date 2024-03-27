@@ -11,10 +11,9 @@ public class BrowserOpen {
 	public static WebDriver driver;
 
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
-		
+
 		BrowserOpen o = new BrowserOpen();
-		o.openBrowser("FIrefox","https://www.google.com");
+		o.openBrowser("FIrefox", "https://www.google.com");
 
 	}
 
@@ -33,6 +32,7 @@ public class BrowserOpen {
 		driver.get(url);
 		System.out.println(driver.getTitle());
 		driver.close();
+		System.out.println(driver.getCurrentUrl());
 
 	}
 
